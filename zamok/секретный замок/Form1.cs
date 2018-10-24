@@ -54,6 +54,7 @@ namespace секретный_замок
 
 =======
                 int[] mas = new int[10] {Convert.ToInt32(Box1.Text), Convert.ToInt32(Box2.Text), Convert.ToInt32(Box3.Text), Convert.ToInt32(Box4.Text),
+                                     Convert.ToInt32(Box5.Text), Convert.ToInt32(Box6.Text), Convert.ToInt32(Box7.Text), Convert.ToInt32(Box8.Text),
                                      Convert.ToInt32(Box9.Text), Convert.ToInt32(Box10.Text)};
 
             
