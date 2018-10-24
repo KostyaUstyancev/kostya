@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using секретный_замок;
 
+
 namespace UnitTest
 {
     [TestClass]
@@ -12,10 +13,10 @@ namespace UnitTest
         {
             // исходные данные
             int[] mas = new int[10] {1,2,3,4,5,6,7,8,9,10};
-            string expected = "Замок закрыт";
+            bool expected = false;
             // получение значения с помощью тестируемого метода
-            Proverka g = new Proverka();
-            string rezult = g.sravnenie(mas);
+            Form1 f = new Form1();
+            bool rezult =f.sravnenie(mas);
             // сравнение ожидаемого результата с полученным
             Assert.AreEqual(expected, rezult);
         }
@@ -24,10 +25,10 @@ namespace UnitTest
         {
             // исходные данные
             int[] mas = new int[10] { 3, 3, 4, 4, 5, 6, 7, 8, 9, 10 };
-            string expected = "Замок открыт";
+            bool expected = true;
             // получение значения с помощью тестируемого метода
-            Proverka g = new Proverka();
-            string rezult = g.sravnenie(mas);
+            Form1 f = new Form1();
+            bool rezult = f.sravnenie(mas);
             // сравнение ожидаемого результата с полученным
             Assert.AreEqual(expected, rezult);
         }
@@ -36,10 +37,11 @@ namespace UnitTest
         {
             // исходные данные
             int[] mas = new int[10] { ' ', 3, 4, 4, 5, 6, 7, 8, 9, 10 };
-            string expected = "Замок закрыт";
+            bool expected = false;
             // получение значения с помощью тестируемого метода
-            Proverka g = new Proverka();
-            string rezult = g.sravnenie(mas);
+            Form1 f = new Form1();
+            bool rezult = f.sravnenie(mas);
+            
             // сравнение ожидаемого результата с полученным
             Assert.AreEqual(expected, rezult);
         }
@@ -48,10 +50,10 @@ namespace UnitTest
         {
             // исходные данные
             int[] mas = new int[10] { '!', '!', '!', '!', '!', '!', '!', '!', '!', '!' };
-            string expected = "Замок закрыт";
+            bool expected = false;
             // получение значения с помощью тестируемого метода
-            Proverka g = new Proverka();
-            string rezult = g.sravnenie(mas);
+            Form1 f = new Form1();
+            bool rezult = f.sravnenie(mas);
             // сравнение ожидаемого результата с полученным
             Assert.AreEqual(expected, rezult);
         }
@@ -60,11 +62,11 @@ namespace UnitTest
         public void TestMethod5()
         {
             // исходные данные
-            int[] mas = new int[1] { '!'};
-            string expected = "Замок закрыт";
+            int[] mas = new int[1] { '!' };
+            bool expected = false;
             // получение значения с помощью тестируемого метода
-            Proverka g = new Proverka();
-            string rezult = g.sravnenie(mas);
+            Form1 f = new Form1();
+            bool rezult = f.sravnenie(mas);
             // сравнение ожидаемого результата с полученным
             Assert.AreEqual(expected, rezult);
         }
@@ -73,12 +75,13 @@ namespace UnitTest
         {
             // исходные данные
             int[] mas = new int[0];
-            string expected = "Ошибка";
+            bool expected = false;
             // получение значения с помощью тестируемого метода
-            Proverka g = new Proverka();
-            string rezult = g.sravnenie(mas);
+            Form1 f = new Form1();
+            bool rezult = f.sravnenie(mas);
             // сравнение ожидаемого результата с полученным
             Assert.AreEqual(expected, rezult);
         }
+        
     }
 }
