@@ -42,6 +42,7 @@ namespace секретный_замок
         }
         private void button1_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             string[] mas1 = new string[10] {Box1.Text, Box2.Text, Box3.Text, Box4.Text,
                                      Box5.Text, Box6.Text, Box7.Text, Box8.Text, Box9.Text, Box10.Text};
             int[] mas = new int[10];
@@ -51,6 +52,12 @@ namespace секретный_замок
             }
 
 
+=======
+                int[] mas = new int[10] {Convert.ToInt32(Box1.Text), Convert.ToInt32(Box2.Text), Convert.ToInt32(Box3.Text), Convert.ToInt32(Box4.Text),
+                                     Convert.ToInt32(Box9.Text), Convert.ToInt32(Box10.Text)};
+
+            
+>>>>>>> 350fd03e549527f9804031aa6132631a24b3407e
             bool res = sravnenie(mas);
             if (res == true)
             {

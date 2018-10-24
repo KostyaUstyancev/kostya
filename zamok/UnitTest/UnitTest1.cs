@@ -82,6 +82,21 @@ namespace UnitTest
             // сравнение ожидаемого результата с полученным
             Assert.AreEqual(expected, rezult);
         }
+<<<<<<< HEAD
         
+=======
+        //[TestMethod]
+        //public void TestMethod7()
+        //{
+        //    // исходные данные
+        //    int[] mas = new int[5] { null, 7, 8, 9, 10 };
+        //    bool expected = false;
+        //    // получение значения с помощью тестируемого метода
+        //    Form1 f = new Form1();
+        //    bool rezult = f.sravnenie(mas);
+        //    // сравнение ожидаемого результата с полученным
+        //    Assert.AreEqual(expected, rezult);
+        //}
+>>>>>>> 350fd03e549527f9804031aa6132631a24b3407e
     }
 }
